@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cirque du Soleil | L'impossible entre en scène</title>
+  <meta name="description" content="Une nouvelle ère du Cirque du Soleil : spectacles à Las Vegas, Hawaï, Riviera Maya et en tournée mondiale. Réservez vos billets.">
+  <link rel="preload" href="fonts/Playfair-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/character.webp" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a class="nav-logo" href="#top"><img src="assets/logo.webp" alt="Cirque du Soleil" width="98" height="64"></a>
+    <div class="nav-links" aria-hidden="true"><span>Spectacles</span><span>Musique</span><span>À propos</span><span>Contact</span></div>
+    <a class="nav-cta" href="#billets">Billets</a>
+  </nav>
+
+  <!-- HERO MÉTAMORPHOSE (système the_techlabb) : le sujet central passe de
+       l'ombre à la lumière pendant le scroll, les titres permutent -->
+  <header class="hero" id="top">
+    <div class="halo" aria-hidden="true"></div>
+    <img class="character" src="assets/character.webp" alt="Artiste du Cirque du Soleil en costume" fetchpriority="high" width="640" height="853">
+
+    <div class="hero-titles" aria-hidden="false">
+      <h1 class="t1">Un artiste<br><em>entre en piste.</em></h1>
+      <h1 class="t2">L'impossible<br><em>entre en scène.</em></h1>
+    </div>
+
+    <aside class="meta meta-g" aria-hidden="true">
+      <p class="meta-k">Actuellement</p>
+      <p>En tournée mondiale</p>
+    </aside>
+    <aside class="meta meta-d" aria-hidden="true">
+      <p class="meta-k">Ce soir</p>
+      <p>Las Vegas · Hawaï · Riviera Maya</p>
+    </aside>
+
+    <p class="scroll-hint" aria-hidden="true">Faites défiler</p>
+  </header>
+
+  <!-- SPECTACLES : grille minimale, vraies affiches -->
+  <section class="works" id="billets">
+    <div class="works-head">
+      <p class="kicker" data-reveal>Spectacles à l'affiche</p>
+      <h2 data-reveal>Choisissez votre <em>vertige</em>.</h2>
+    </div>
+    <div class="works-grid">
+      <a class="work" href="https://www.cirquedusoleil.com/fr/auana" target="_blank" rel="noopener" data-reveal>
+        <img src="assets/auana.webp" alt="'Auana" loading="lazy" width="560" height="560">
+        <div class="work-row"><h3>'Auana</h3><span>Nouveau · Hawaï</span></div>
+      </a>
+      <a class="work" href="https://www.cirquedusoleil.com/fr/joya" target="_blank" rel="noopener" data-reveal>
+        <img src="assets/joya.webp" alt="JOYÀ" loading="lazy" width="454" height="454">
+        <div class="work-row"><h3>JOYÀ</h3><span>Dîner-spectacle · Riviera Maya</span></div>
+      </a>
+      <a class="work" href="https://www.cirquedusoleil.com/fr/radio-andorra" target="_blank" rel="noopener" data-reveal>
+        <img src="assets/radio-andorra.webp" alt="Radio Andorra" loading="lazy" width="454" height="454">
+        <div class="work-row"><h3>Radio Andorra</h3><span>Représentation limitée</span></div>
+      </a>
+      <a class="work" href="https://www.cirquedusoleil.com/fr/spectacles" target="_blank" rel="noopener" data-reveal>
+        <img src="assets/corteo.webp" alt="Corteo" loading="lazy" width="560" height="560">
+        <div class="work-row"><h3>Corteo</h3><span>En tournée</span></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- BANDE VIDÉO : leur vraie boucle ECHO, zoom au scroll -->
+  <section class="era" data-panel>
+    <video data-panel-media src="assets/echo.mp4" autoplay muted loop playsinline aria-hidden="true"></video>
+    <div class="era-caption" data-panel-caption>
+      <p class="kicker kicker-blanc">ECHO</p>
+      <h2>Bienvenue dans une <em>nouvelle ère</em> du Cirque du Soleil.</h2>
+    </div>
+  </section>
+
+  <!-- UNIVERS : deux tuiles réelles -->
+  <section class="univers">
+    <a class="tuile" href="https://www.cirquedusoleil.com/fr" target="_blank" rel="noopener" data-reveal>
+      <img src="assets/musique.webp" alt="L'univers musical du Cirque du Soleil" loading="lazy" width="715" height="580">
+      <div class="work-row"><h3>La musique</h3><span>Écouter l'univers sonore</span></div>
+    </a>
+    <a class="tuile" href="https://www.cirquedusoleil.com/fr" target="_blank" rel="noopener" data-reveal>
+      <img src="assets/sun.webp" alt="Campagne de marque, soleil blanc" loading="lazy" width="708" height="672">
+      <div class="work-row"><h3>Las Vegas</h3><span>Les résidences permanentes</span></div>
+    </a>
+  </section>
+
+  <!-- FINALE -->
+  <footer class="finale">
+    <div class="finale-inner">
+      <p class="kicker kicker-blanc" data-reveal>Ce soir, quelque part dans le monde</p>
+      <h2 data-reveal>Voir un spectacle<br><em>ce soir.</em></h2>
+      <a class="nav-cta cta-big" href="https://www.cirquedusoleil.com/fr/spectacles" target="_blank" rel="noopener" data-reveal>Réserver des billets</a>
+    </div>
+    <div class="legal">
+      <p>© 2026 Cirque du Soleil. Tous droits réservés.</p>
+      <p>Concept de refonte non affilié : démonstration par <a href="https://www.dondisanteme.com" target="_blank" rel="noopener">Dondi Santeme</a>.</p>
+    </div>
+  </footer>
+
+  <script src="vendor/gsap.min.js" defer></script>
+  <script src="vendor/ScrollTrigger.min.js" defer></script>
+  <script src="vendor/lenis.min.js" defer></script>
+  <script src="scroll-fx.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
